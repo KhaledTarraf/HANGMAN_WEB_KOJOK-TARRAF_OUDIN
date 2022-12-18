@@ -8,9 +8,12 @@
     <title>Page d'acceuille</title>
 </head>
 <body>
-    <div>
+    <div class="title1">
+        <h1>Bienvenue sur notre jeu du Pendu version web !</h1>
+    </div>
+    <div class="difficulties">
         <form action="/hangman" method="POST">
-            <label for="username">Nom d'utilisateur :</label><br>
+            <label class="title2 username" for="username">Nom d'utilisateur :</label><br>
             <input type="text" id="username" name="username"><br>
             <label for="difficulty">Difficulté :</label><br>
             <input type="radio" id="difficulty-easy" name="difficulty" value="Facile">
@@ -19,7 +22,7 @@
             <label for="difficulty-normal">Normal</label><br>
             <input type="radio" id="difficulty-hard" name="difficulty" value="Difficile">
             <label for="difficulty-hard">Difficile</label><br><br>
-            <input type="submit" value="Envoyer">
+            <input class="submit play2" type="submit" value="Commencer à jouer!">
           </form>
     </div>
 </body>
