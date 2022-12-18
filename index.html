@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../HANGMAN_WEB_KOJOK-TARRAF_OUDIN/css/style.css">
-    <title>Hangman</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Page d'acceuille</title>
 </head>
 <body>
     <div>
-        <form action="/HANGMAN_WEB_KOJOK-TARRAF_OUDIN/hangman.html" class="m-page" method="POST">
-            <label for="username" class="username">Nom d'utilisateur :</label><br>
-            <input type="text" class="inputname" name="username"><br>
-            <label for="difficulty" class="difficulties">Difficulté :</label><br>
-            <input type="radio" id="difficulty-easy" name="difficulty" value="easy">
+        <form action="/hangman" method="POST">
+            <label for="username">Nom d'utilisateur :</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="difficulty">Difficulté :</label><br>
+            <input type="radio" id="difficulty-easy" name="difficulty" value="Facile">
             <label for="difficulty-easy">Facile</label><br>
-            <input type="radio" id="difficulty-normal" name="difficulty" value="normal">
+            <input type="radio" id="difficulty-normal" name="difficulty" value="Normal">
             <label for="difficulty-normal">Normal</label><br>
-            <input type="radio" id="difficulty-hard" name="difficulty" value="hard">
+            <input type="radio" id="difficulty-hard" name="difficulty" value="Difficile">
             <label for="difficulty-hard">Difficile</label><br><br>
-            <input type="submit" class="submit" value="Envoyer">
+            <input type="submit" value="Envoyer">
           </form>
     </div>
 </body>

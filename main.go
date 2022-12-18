@@ -60,8 +60,12 @@ func Hangmanpage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+
+	fs := http.FileServer(http.Dir("css"))
+	http.Handle("/css/", http.StripPrefix("/css/", fs))
+
 	http.HandleFunc("/", Homepage)
-	http.HandleFunc("/hangman.html", Hangmanpage)
+	http.HandleFunc("/hangman", Hangmanpage)
 
 	fmt.Println("(http://localhost:8080/) - Server is running on port 8080")
 	http.ListenAndServe(":8080", nil)

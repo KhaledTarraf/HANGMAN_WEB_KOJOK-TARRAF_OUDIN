@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../HANGMAN_WEB_KOJOK-TARRAF_OUDIN/css/hangman.css">
-    <title>Hangman</title>
+    <link rel="stylesheet" href="/css/hangman.css">
+    <title>Page Hangman</title>
 </head>
 <body>
     <div>
         <h1>Bienvenue sur la page Hangman {{.Username}} </h1>
-        <p>Difficulté sélectionnée: {{.Difficulty}}</p>
-        <p>Il vous reste {{.HangmanData.Attempts}} chances</p>
+        <p>Difficulté sélectionner: {{.Difficulty}}</p>
+        <p>Il vous reste {{.HangmanData.Attempts}} chance(s)</p>
 
-        <form action="/hangman/guess" class="guess" method="POST">
+        <form action="/hangman" method="POST">
             <label for="guess">Entrer une lettre ou un mot :</label><br>
             <input type="text" id="guess" name="guess"><br><br>
-            <input type="submit" class="submit"value="Envoyer">
+            <input type="submit" value="Envoyer">
         </form>
     </div>
 </body>
