@@ -61,7 +61,7 @@ func Hangmanpage(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", Homepage)
-	http.HandleFunc("/hangman", Hangmanpage)
+	http.HandleFunc("/hangman.html", Hangmanpage)
 
 	fmt.Println("(http://localhost:8080/) - Server is running on port 8080")
 	http.ListenAndServe(":8080", nil)

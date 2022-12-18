@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'NerkoOne';
+    src: url(NerkoOne-Regular.ttf);
+}
+
+body {
+    font-family: 'NerkoOne';
+    background-image: url(../css/background.jpg);
+    background-size: 100%;
+}
+
+.username {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 60px;
+    margin: 25px 25px;
+    padding: 25px 25px;
+}
+
+
+.difficulties {
+    font-size: 30px;
+    margin: 30px 30px;
+    padding: 30px 30px;
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    display: contents;
+    font-size: 25px;
+}
+
+.submit {
+    margin: 15px 15px;
+    padding: 15px 15px;
+    border: none;
+    padding: 15px 40px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 10px 15px 20px 25px;
+    background-color: rgb(185, 78, 139);
+    transition: 0.4s;
+}
+
+.submit:hover {
+    background-color: rgb(153, 58, 121);
+}
+
+input {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+.m-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px;
+    padding: 15px 15px;
+}
+
+

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'NerkoOne';
+    src: url(NerkoOne-Regular.ttf);
+}
+
+body {
+    font-family: 'NerkoOne';
+    background-image: url(../css/background.jpg);
+    background-size: 100%;
+}
+
+
+.submit {
+    margin: 15px 15px;
+    padding: 15px 15px;
+    border: none;
+    padding: 15px 40px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 10px 15px 20px 25px;
+    background-color: rgb(185, 78, 139);
+    transition: 0.4s;
+}
+
+.submit:hover {
+    background-color: rgb(153, 58, 121);
+}
+
+input {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+h1{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px;
+    padding: 15px 15px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 15px 15px;
+    padding: 15px 15px;
+}
+
+.guess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px;
+    padding: 15px 15px;
+    font-size: 25px;
+}
