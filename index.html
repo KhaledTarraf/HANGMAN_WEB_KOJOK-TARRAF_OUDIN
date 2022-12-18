@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="/hangman" method="POST">
+            <label for="username">Nom d'utilisateur :</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="difficulty">Difficulté :</label><br>
+            <input type="radio" id="difficulty-easy" name="difficulty" value="easy">
+            <label for="difficulty-easy">Facile</label><br>
+            <input type="radio" id="difficulty-normal" name="difficulty" value="normal">
+            <label for="difficulty-normal">Normal</label><br>
+            <input type="radio" id="difficulty-hard" name="difficulty" value="hard">
+            <label for="difficulty-hard">Difficile</label><br><br>
+            <input type="submit" value="Envoyer">
+          </form>
+    </div>
+</body>
+</html>
